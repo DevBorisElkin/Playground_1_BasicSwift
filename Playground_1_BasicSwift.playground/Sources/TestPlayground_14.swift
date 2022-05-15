@@ -121,4 +121,34 @@ public class TestLesson_14
     {
         
     }
+    
+    // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    // UPDATED ON 16th May 2022
+    // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    
+    // and below is example of a get-only property
+    // 1) and 2) will be called if we use declared testClassVariable in some way
+    
+    var testClassVariable : TestClass{
+        print("1) Created variable of a test class")
+        var variable:TestClass = TestClass()
+        variable.number = 2
+        return variable
+    }
+    
+    class TestClass{
+        var number:Int = 0
+        
+        init(){
+            print("2) called initializer of TestClass")
+        }
+    }
+    
+    // and this is just like example before but with 'let' instead of 'var'
+    
+    //let mapView : MKMapView = {
+    //    let mapView = MKMapView()
+    //    mapView.translatesAutoresizingMaskIntoConstraints = false
+    //    return mapView
+    //}()
 }
