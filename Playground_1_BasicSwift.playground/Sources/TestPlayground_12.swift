@@ -4,6 +4,11 @@ public class TestLesson_12
 {
     public func NewCodeHere()
     {
+        //mainExample()
+        secondExample()
+    }
+    
+    func mainExample(){
         var operation:(Double, Double) -> Double
         //operation = plus(a1:a2:)
         operation = plus
@@ -119,9 +124,86 @@ public class TestLesson_12
         NewCodeHere()
     }
     
-    // Use this to simply write code and test how you have memorized it
-    public func ShowMemorizing()
-    {
+    func secondExample(){
+        print("_____Closures example 1 below_____")
         
+        // that way our clsure gets 'number', and prints to console 100 and then 200
+        // because it's directly takes 'number' variable
+        var number = 100
+        
+        var someClosure = {
+            print("Executing some closure \(number)")
+        }
+        
+        someClosure()
+        
+        number = 200
+        someClosure()
+        
+        print("_____Closures example 2 below_____")
+        
+        // that way we are capturing 'anotherNumber' by setting it into [captureList] and then
+        // by typing keyWork 'in' we let compiler know that closure executuin body is below
+        // [captureList] is an array, we can put there any amount of variables we want
+        // basically what it does with ValueType is
+        /*
+         var anotherNumber = 100
+         
+         var anotherClosure = { [anotherNumber] in
+             let referencedValue = anotherNumber
+             print("Executing some closure \(referencedValue)")
+         }
+         
+         so it just creates a variable and (copies) stores the value there
+         */
+        
+        var anotherNumber = 100
+        
+        var anotherClosure = { [anotherNumber] in
+            print("Executing some closure \(anotherNumber)")
+        }
+        
+        anotherClosure()
+        anotherNumber = 200
+        anotherClosure()
+        
+        print("_____Closures example 3 below_____")
+        
+        var person = Person("person_1")
+        
+        var thirdClosure = { [person] in
+            print("Executing some closure \(person.name)")
+        }
+        
+        thirdClosure()
+        
+        //person.name = "person_2"
+        // even with capturing 'person' name displayed will be 'person_2' because
+        // we're capturing reference type variable, and it would be like this
+        /*
+         var thirdClosure = { [person] in
+             var copy = person // it's reference type
+             print("Executing some closure \(copy.name)")
+         }
+         */
+        
+        // but with that captured 'person' will remain the same even though for variable
+        // 'person' we assinged a different instance of a class
+        // will there be a memory leak because of closure?
+        // output to console both times: 'person_1'
+        person = Person("Bob")
+        
+        thirdClosure()
+        
+        
+    }
+}
+
+class Person{
+    
+    var name:String
+    
+    init(_ nameOfPerson : String){
+        name = nameOfPerson
     }
 }
