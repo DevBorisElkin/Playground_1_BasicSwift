@@ -105,6 +105,13 @@ public class TestLesson_12_2
         doSomeAction_2 { numberOne, numberTwo in
             return numberOne * numberTwo
         }
+        
+        doSomeAction_3 { numberOne, numberTwo in
+            return numberOne * numberTwo
+        } _: { numberOne, numberTwo in
+            return numberOne + numberTwo
+        }
+
     }
     
     func doSomeAction(_ str:String, _ action : (_ firstVar:String) -> Void){
@@ -114,6 +121,15 @@ public class TestLesson_12_2
     func doSomeAction_2(_ action : (_ numberOne : Int32, _ numberTwo : Int32) -> Int32){
         var result = action(2, 4)
         print("result of a calculation is \(result)")
+    }
+    
+    // calculates and prints the result of two functiuons
+    func doSomeAction_3(
+        _ action : (_ numberOne : Int32, _ numberTwo : Int32) -> Int32,
+        _ action_2 : (_ numberOne : Int32, _ numberTwo : Int32) -> Int32){
+        
+        var result = action(1,3) + action_2(4,2)
+        print(result)
     }
 }
 
