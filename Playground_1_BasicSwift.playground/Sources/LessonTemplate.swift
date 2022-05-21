@@ -1,6 +1,6 @@
 import Foundation
 
-public class LessonTemplate
+public class Test_Lesson
 {
     public func NewCodeHere()
     {

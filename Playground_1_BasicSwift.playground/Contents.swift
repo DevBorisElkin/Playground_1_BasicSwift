@@ -39,8 +39,8 @@ import UIKit
 //var lesson_12 = TestLesson_12(lessonName: "Closures")
 //lesson_12.ShowLesson()
 
-var lesson_12_2 = TestLesson_12_2(lessonName: "More detailed Closures")
-lesson_12_2.ShowLesson()
+//var lesson_12_2 = TestLesson_12_2(lessonName: "More detailed Closures")
+//lesson_12_2.ShowLesson()
 
 //var lesson_13 = TestLesson_13(lessonName: "Приведение типов, опциональные цепочки")
 //lesson_13.ShowLesson()
@@ -56,4 +56,7 @@ lesson_12_2.ShowLesson()
 
 //var lesson_17 = TestLesson_17(lessonName: "Access modifiers - private, public, etc.")
 //lesson_17.ShowLesson()
+
+var lesson_18 = TestLesson_18(lessonName: "Learning and fixing memory problems")
+lesson_18.ShowLesson()
 
