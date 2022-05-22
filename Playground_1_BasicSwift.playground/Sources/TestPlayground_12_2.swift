@@ -93,6 +93,43 @@ public class TestLesson_12_2
         person = Person("Bob")
         
         thirdClosure()
+        
+        
+        var someCoolClosure:((_ number: Int32) -> Void) = {number in
+            print("printing number: \(number)")
+        }
+        someCoolClosure(5)
+        
+        var coolInt = 2
+        var fourthClosure : ((_ p:Person, _ p2:Person, _ int:Int32) -> Void) = { p, p2, int in
+            print("Executing some closure \(p.name) \(p2.name) \(int)")
+        }
+        
+        // found this on YouTube https://www.youtube.com/watch?v=F68lyXkkfCY&ab_channel=PaulHudson
+        // we can skip 'return' keyword because there's only one line and
+        // compiler assumes if it's string that's what we're returning
+        let sayHello = { (name : String) -> String in
+            "Hi \(name)"
+        }
+        
+        // or
+        
+        let sayHello_2 = { (name : String) -> String in
+            print("gg")
+            return "Hi \(name)"
+        }
+        
+        print(sayHello("Boris"))
+        
+        // these both explicit type definitions are the same
+        // hovewer the first one with 'Void' is preferred
+        var b: () -> Void = doSomething
+        var a: () -> () = doSomething
+        
+    }
+    
+    func doSomething(){
+        
     }
     
     func thirdExample(){
