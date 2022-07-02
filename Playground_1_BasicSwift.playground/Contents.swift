@@ -1,5 +1,13 @@
 import UIKit
 
+/*
+ All known data structures:
+ Array, Dictionary, Set, Tuple, Tree, Stack, Queue, LinkedList, Graph
+ 
+ 
+ */
+
+
 //var lesson_1 = TestLesson_1(var: "Swift basics")
 //lesson_1.ShowLesson()
 

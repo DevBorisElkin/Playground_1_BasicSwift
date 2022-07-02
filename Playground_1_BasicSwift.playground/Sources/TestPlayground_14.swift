@@ -25,6 +25,11 @@ public class TestLesson_14
     struct Car{
         var mark:String
         var model:String
+        
+        // Property observers
+        // Сразу в себя записывает значение, и хранит его, если нету get{} set{}
+        // Также как и переменной можно сразу задать значение
+        // var year: Int = 5 {...}
         var year:Int{
             // willSet & didSet не вызываются при инизиализации
             // структуры, работают только когда изменяем свойство
@@ -36,6 +41,7 @@ public class TestLesson_14
                 print("NewValue, year - \(newValue)")
             }
             // вызывается пост фактум, после назначения
+            // еще в didSet можно получить доступ к oldValue
             didSet{
                 // просто доп проверка как в классический Properties
                 if(self.year < 2000){
@@ -49,6 +55,10 @@ public class TestLesson_14
             get{
                 return "\(mark) \(model) \(year)"
             }
+            // by default new value name is 'newValue', but we can change it like this
+            // set(kindOfNewNameForIncomingValue){
+            //
+            // }
             set{
                 let full = newValue.components(separatedBy: " ")
                 if(full.count > 2){
@@ -88,6 +98,29 @@ public class TestLesson_14
         static func getNumberCars() -> Int{
             return Car.count
         }
+    }
+    
+    public class SuperCar{
+        // class-properties - свойства классов // их нельзя объявить у структуры
+        class var selfWeight : Int { return 1000 }
+        class var maxWeight : Int { return 2500 }
+        class var someWeight : Int {
+            get{
+                return 2500
+            }
+            set(coolVarName){
+                print("It's like we assign value to it \(coolVarName)")
+            }
+        }
+        // Обращаемся к ним так, -> напоминают static properties
+        // SuperCar.maxWeight
+        
+        func foo(){
+            SuperCar.someWeight = 2
+        }
+        
+        // Да, статик все еще можем использовать
+        public static var carInventor = "Bob"
     }
     
     public static func getPrice() -> Int{
