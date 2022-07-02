@@ -18,6 +18,24 @@ public class TestLesson_19
         for (name, age) in charactersAge{
             print("\(name), \(age)")
         }
+        
+        print("_______")
+        
+        var someNestedTuple = (1, 12, "Cat", ("Bob", "John", 1232))
+        
+        // since 3rd element is a tuple too, like that we will access someNestedTuple.3.0
+        print(someNestedTuple.3)
+        
+        print(someNestedTuple.3.1)
+        
+        // Can't add or remove values to/from tuple, need to create a new one
+//        var company = ("Programiz","Apple", "Netflix")
+//        company.3 = "Google"
+//        company.remove("Apple")
+//        print(company)
+        
+        var tupleWithDictionary = (1,12, [12:"Cat", 24:"Violin"])
+        print(tupleWithDictionary.2[12])
     }
     
     //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
