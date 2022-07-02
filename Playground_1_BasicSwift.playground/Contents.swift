@@ -57,6 +57,9 @@ import UIKit
 //var lesson_17 = TestLesson_17(lessonName: "Access modifiers - private, public, etc.")
 //lesson_17.ShowLesson()
 
-var lesson_18 = TestLesson_18(lessonName: "Learning and fixing memory problems")
-lesson_18.ShowLesson()
+//var lesson_18 = TestLesson_18(lessonName: "Learning and fixing memory problems")
+//lesson_18.ShowLesson()
+
+var lesson_19 = TestLesson_19(lessonName: "Tuples example")
+lesson_19.ShowLesson()
 
