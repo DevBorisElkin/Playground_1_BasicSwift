@@ -76,3 +76,13 @@ import UIKit
 
 //var lesson_21 = TestLesson_21(lessonName: "OptionalChaining")
 //lesson_21.ShowLesson()
+
+// Note: There's also such fuature as subscripts
+
+// Note: This project doesn't include extensions (Extend Int, String or any data type)
+
+// Note: This project doesn't include error handling (Exceptions)
+
+// Note: This project doesn't include Async - Await
+
+// Note: This project doesn't include Url.shared.dataTask and getting JSON via API
