@@ -2,6 +2,12 @@ import Foundation
 
 public class TestLesson_10
 {
+    
+    // оператор "===" проверяет, ссылаются ли 2 переменные на один экземпляр класса
+    
+    // оператор "==" проверяет, равны ли значения, но для кастомного класса нужно
+    // реализовать протокол Equatable, и переопределить оператор "=="
+    
     public func NewCodeHere()
     {
         var transport = Transport(numOfSeats: 1, color: .blue)

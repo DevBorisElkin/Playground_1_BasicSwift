@@ -68,6 +68,9 @@ import UIKit
 //var lesson_18 = TestLesson_18(lessonName: "Learning and fixing memory problems")
 //lesson_18.ShowLesson()
 
-var lesson_19 = TestLesson_19(lessonName: "Tuples example")
-lesson_19.ShowLesson()
+//var lesson_19 = TestLesson_19(lessonName: "Tuples example")
+//lesson_19.ShowLesson()
+
+var lesson_20 = TestLesson_20(lessonName: "Type aliases")
+lesson_20.ShowLesson()
 
