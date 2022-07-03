@@ -71,6 +71,8 @@ import UIKit
 //var lesson_19 = TestLesson_19(lessonName: "Tuples example")
 //lesson_19.ShowLesson()
 
-var lesson_20 = TestLesson_20(lessonName: "Type aliases")
-lesson_20.ShowLesson()
+//var lesson_20 = TestLesson_20(lessonName: "Type aliases")
+//lesson_20.ShowLesson()
 
+//var lesson_21 = TestLesson_21(lessonName: "OptionalChaining")
+//lesson_21.ShowLesson()
