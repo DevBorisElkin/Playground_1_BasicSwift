@@ -67,6 +67,34 @@ public class TestLesson_15
     // Use this to simply write code and test how you have memorized it
     public func ShowMemorizing()
     {
+        var taxiDriver = TaxiDriver()
+        taxiDriver.drive()
         
+        taxiDriver.drive()
+    }
+    
+    
+    
+    
+
+}
+
+protocol Driver{
+    
+    var yearsAtDriving: Int {get set}
+    
+    func drive()
+}
+
+class TaxiDriver{
+    var yearsAtDriving: Int = 0
+}
+
+extension TaxiDriver : Driver{
+    
+    func drive() {
+        print("driver is going to ride, he has years at driving = \(yearsAtDriving)")
+        yearsAtDriving += 1
+        print("Now driver has years at driving = \(yearsAtDriving)")
     }
 }

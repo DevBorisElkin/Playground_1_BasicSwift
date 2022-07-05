@@ -56,8 +56,9 @@ import UIKit
 //var lesson_14 = TestLesson_14(lessonName: "Properties")
 //lesson_14.ShowLesson()
 
-//var lesson_15 = TestLesson_15(lessonName: "Protocols")
+var lesson_15 = TestLesson_15(lessonName: "Protocols")
 //lesson_15.ShowLesson()
+lesson_15.ShowMemorizing()
 
 //var lesson_16 = TestLesson_16(lessonName: "Extensions")
 //lesson_16.ShowLesson()

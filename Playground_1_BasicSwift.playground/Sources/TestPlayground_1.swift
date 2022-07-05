@@ -87,6 +87,7 @@ public class TestLesson_1
                 print("this is string")
             default:
                 print("I don't know what that is")
+            }
         }
     }
 }
