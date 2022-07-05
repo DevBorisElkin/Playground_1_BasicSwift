@@ -79,11 +79,34 @@ public class TestLesson_15
 
 }
 
+protocol HumanProtocol{
+    var name: String { get }
+}
+
 protocol Driver{
     
     var yearsAtDriving: Int {get set}
     
     func drive()
+}
+
+// when extending a protocol we sort of give it a default realization
+// later we can override it (cover it by other realization)
+extension Driver{
+    var yearsAtDriving: Int {
+        get{
+            return 0
+        }
+        set{
+            print("Going to set years at driving \(newValue)")
+        }
+    }
+    
+    func drive() {
+        print("driver is going to ride, he has years at driving = \(yearsAtDriving)")
+        //yearsAtDriving += 1
+        print("Now driver has years at driving = \(yearsAtDriving)")
+    }
 }
 
 class TaxiDriver{
@@ -93,8 +116,16 @@ class TaxiDriver{
 extension TaxiDriver : Driver{
     
     func drive() {
-        print("driver is going to ride, he has years at driving = \(yearsAtDriving)")
-        yearsAtDriving += 1
-        print("Now driver has years at driving = \(yearsAtDriving)")
+        print("driver is going to ride GGGG, he has years at driving = \(yearsAtDriving)")
+        //yearsAtDriving += 1
+        print("Now driver has years at driving GGGG = \(yearsAtDriving)")
     }
+}
+
+extension TaxiDriver : HumanProtocol{
+    var name: String {
+        return "Bob"
+    }
+    
+    
 }
