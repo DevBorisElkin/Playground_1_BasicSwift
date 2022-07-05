@@ -87,3 +87,6 @@ lesson_15.ShowMemorizing()
 // Note: This project doesn't include Async - Await
 
 // Note: This project doesn't include Url.shared.dataTask and getting JSON via API
+
+var lesson_22 = TestLesson_22(lessonName: "Generics")
+lesson_22.ShowLesson()
