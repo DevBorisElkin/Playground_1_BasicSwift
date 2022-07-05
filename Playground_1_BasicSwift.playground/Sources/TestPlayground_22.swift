@@ -11,7 +11,13 @@ public class TestLesson_22
         printTwoValues(firstValue: 1, secondValue: "Hello")
         printTwoValues(firstValue: "Bla bla bla", secondValue: 44.1)
         
+        var arrayOfInts = [1, 23, 43, 6, 2, -24, 2, -12]
+        var arrayOfStrings = ["Hello", "There!", "Ha ha", "Another string"]
+        var arrayOfDoubles = [2.5, 2.7, 1.0, 8.2, -76.2]
         
+        printArray(someArray: arrayOfInts)
+        printArray(someArray: arrayOfStrings)
+        printArray(someArray: arrayOfDoubles)
     }
     
     //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
@@ -48,4 +54,10 @@ public class TestLesson_22
             print(element)
         }
     }
+    
+//    public func doSomethingWithUIElement<T : UIView>(someArray : [T]){
+//        for element in someArray{
+//            print(element)
+//        }
+//    }
 }
