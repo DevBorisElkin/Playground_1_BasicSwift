@@ -18,6 +18,16 @@ public class TestLesson_22
         printArray(someArray: arrayOfInts)
         printArray(someArray: arrayOfStrings)
         printArray(someArray: arrayOfDoubles)
+        
+        // _____________
+        
+        var b = "a"
+        var a = "b"
+        
+        swappy(a: &a, b: &b)
+        
+        print("a: \(a)")
+        print("b: \(b)")
     }
     
     //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
@@ -60,4 +70,11 @@ public class TestLesson_22
 //            print(element)
 //        }
 //    }
+    
+    
+    func swappy<T>(a: inout T, b: inout T){
+        let temp = a
+        a = b
+        b = temp
+    }
 }
