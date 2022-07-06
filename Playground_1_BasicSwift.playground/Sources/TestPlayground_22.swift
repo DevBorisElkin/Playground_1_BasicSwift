@@ -28,6 +28,14 @@ public class TestLesson_22
         
         print("a: \(a)")
         print("b: \(b)")
+        
+        var a1 = CustomClassA(id: "b")
+        var b1 = CustomClassA(id: "a")
+        
+        swappy(a: &a1, b: &b1)
+        
+        print("a1:\(a1.id), b1:\(b1.id)")
+        
     }
     
     //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
@@ -71,10 +79,42 @@ public class TestLesson_22
 //        }
 //    }
     
-    
+    // 'inout' keyword allows you to change values of incoming classes and structs as function incoming parameters
+    // by default, all incoming types that come as a fuction parameters are marked as 'let' - constants
+    // hovewer 'inout' lets you actually modify incoming values, changing not exclusivley version of
+    // parameters that come inside a function as a function parameters, but those variables that
+    // are being passed from outside into a function
     func swappy<T>(a: inout T, b: inout T){
         let temp = a
         a = b
         b = temp
+    }
+    // inout is also required for reference type as we can see from method below. Without 'inout' the code won't compile
+    func swappy(a: inout CustomClassA, b: inout CustomClassA){
+        let temp = a
+        a = b
+        b = temp
+    }
+    
+    // this one without 'inout' has an error
+//    func swappy_2(a: CustomClassA, b: CustomClassA){
+//        let temp = a
+//        a = b
+//        b = temp
+//    }
+    
+    /*
+     Conclusion
+     Swift inout parameter is a parameter that can be changed inside the function where it’s passed into.
+
+     To accept inout parameters, use the inout keyword in front of an argument.
+     To pass a variable as an inout parameter, use the & operator in front of the parameter.
+     */
+    
+    class CustomClassA{
+        var id: String
+        init(id : String){
+            self.id = id
+        }
     }
 }
