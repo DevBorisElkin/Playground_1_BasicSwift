@@ -88,5 +88,8 @@ import UIKit
 
 // Note: This project doesn't include Url.shared.dataTask and getting JSON via API
 
-var lesson_22 = TestLesson_22(lessonName: "Generics")
-lesson_22.ShowLesson()
+//var lesson_22 = TestLesson_22(lessonName: "Generics")
+//lesson_22.ShowLesson()
+
+var lesson_23 = TestLesson_23(lessonName: "Swift 4 Update")
+lesson_23.ShowLesson()
