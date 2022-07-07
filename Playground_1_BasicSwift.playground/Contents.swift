@@ -91,5 +91,8 @@ import UIKit
 //var lesson_22 = TestLesson_22(lessonName: "Generics")
 //lesson_22.ShowLesson()
 
-var lesson_23 = TestLesson_23(lessonName: "Swift 4 Update")
-lesson_23.ShowLesson()
+//var lesson_23 = TestLesson_23(lessonName: "Swift 4 Update")
+//lesson_23.ShowLesson()
+
+var lesson_24 = TestLesson_24(lessonName: "Swift 5 Update")
+lesson_24.ShowLesson()
