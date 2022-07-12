@@ -1,12 +1,13 @@
 import UIKit
+import PlaygroundSupport
 
 /*
  All known data structures:
- Array, Dictionary, Set, Tuple, Tree, Stack, Queue, LinkedList, Graph
- 
- 
+ Array, Dictionary, Set, Tuple, Tree, Stack, Queue, LinkedList, Graph, Map?
  */
 
+// for playground to not stop working
+PlaygroundPage.current.needsIndefiniteExecution = true
 
 //var lesson_1 = TestLesson_1(var: "Swift basics")
 //lesson_1.ShowLesson()
@@ -50,7 +51,7 @@ import UIKit
 //var lesson_12_2 = TestLesson_12_2(lessonName: "More detailed Closures")
 //lesson_12_2.ShowLesson()
 
-//var lesson_13 = TestLesson_13(lessonName: "Приведение типов, опциональные цепочки")
+//var lesson_13 = TestLesson_13(lessonName: "Type inference(Выведение типа) Приведение типов, опциональные цепочки")
 //lesson_13.ShowLesson()
 
 //var lesson_14 = TestLesson_14(lessonName: "Properties")
@@ -78,6 +79,20 @@ import UIKit
 //var lesson_21 = TestLesson_21(lessonName: "OptionalChaining")
 //lesson_21.ShowLesson()
 
+//var lesson_22 = TestLesson_22(lessonName: "Generics")
+//lesson_22.ShowLesson()
+
+//var lesson_23 = TestLesson_23(lessonName: "Swift 4 Update")
+//lesson_23.ShowLesson()
+
+//var lesson_24 = TestLesson_24(lessonName: "Swift 5 Update")
+//lesson_24.ShowLesson()
+
+var lesson_25 = TestLesson_25(lessonName: "GCD - Grand Central Dispatch")
+lesson_25.ShowLesson()
+
+
+
 // Note: There's also such fuature as subscripts
 
 // Note: This project doesn't include extensions (Extend Int, String or any data type)
@@ -87,12 +102,3 @@ import UIKit
 // Note: This project doesn't include Async - Await
 
 // Note: This project doesn't include Url.shared.dataTask and getting JSON via API
-
-//var lesson_22 = TestLesson_22(lessonName: "Generics")
-//lesson_22.ShowLesson()
-
-//var lesson_23 = TestLesson_23(lessonName: "Swift 4 Update")
-//lesson_23.ShowLesson()
-
-var lesson_24 = TestLesson_24(lessonName: "Swift 5 Update")
-lesson_24.ShowLesson()

@@ -2,18 +2,9 @@ import Foundation
 
 public class TestLesson_X
 {
-    public func NewCodeHere()
-    {
-        
-    }
-    
-    //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-    
     private var _lessonName:String
-    public init (lessonName:String)
-    {
-        _lessonName = lessonName
-    }
+    
+    public init (lessonName:String) { _lessonName = lessonName }
     
     public func ShowLesson()
     {
@@ -21,8 +12,7 @@ public class TestLesson_X
         NewCodeHere()
     }
     
-    // Use this to simply write code and test how you have memorized it
-    public func ShowMemorizing()
+    public func NewCodeHere()
     {
         
     }
