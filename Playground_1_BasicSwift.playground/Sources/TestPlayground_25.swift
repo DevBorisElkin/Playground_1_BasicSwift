@@ -14,6 +14,7 @@ public class TestLesson_25
     
     public func NewCodeHere()
     {
+        // https://habr.com/ru/post/320152/
         
          // Topics:
          // 1) Basics
