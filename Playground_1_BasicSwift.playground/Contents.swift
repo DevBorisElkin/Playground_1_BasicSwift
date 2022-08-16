@@ -88,10 +88,8 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 //var lesson_24 = TestLesson_24(lessonName: "Swift 5 Update")
 //lesson_24.ShowLesson()
 
-var lesson_25 = TestLesson_25(lessonName: "GCD - Grand Central Dispatch")
-lesson_25.ShowLesson()
-
-
+//var lesson_25 = TestLesson_25(lessonName: "GCD - Grand Central Dispatch")
+//lesson_25.ShowLesson()
 
 // Note: There's also such fuature as subscripts
 
